@@ -4,7 +4,7 @@
     <list default="true" id="4f50071b-ebe4-4d29-a9fa-ff4b5f8a98e0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/logs/laravel-2020-07-30.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel-2020-07-30.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +156,7 @@
       <workItem from="1596028007290" duration="568000" />
       <workItem from="1596030755938" duration="2384000" />
       <workItem from="1596033262507" duration="303000" />
-      <workItem from="1596035552140" duration="7745000" />
+      <workItem from="1596035552140" duration="7927000" />
     </task>
     <servers />
   </component>
@@ -182,10 +182,10 @@
     <state x="410" y="175" width="620" height="488" key="find.popup/0.0.1440.827@0.0.1440.827" timestamp="1596068731357" />
     <state x="410" y="175" width="620" height="490" key="find.popup/0.0.1440.829@0.0.1440.829" timestamp="1596069176484" />
     <state x="410" y="190" width="620" height="520" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1596033046748" />
-    <state x="385" y="180" width="672" height="622" key="search.everywhere.popup" timestamp="1596078181817">
+    <state x="385" y="180" width="672" height="622" key="search.everywhere.popup" timestamp="1596078422563">
       <screen x="0" y="0" width="1440" height="827" />
     </state>
-    <state x="385" y="180" width="672" height="622" key="search.everywhere.popup/0.0.1440.827@0.0.1440.827" timestamp="1596078181817" />
+    <state x="385" y="180" width="672" height="622" key="search.everywhere.popup/0.0.1440.827@0.0.1440.827" timestamp="1596078422563" />
     <state x="385" y="180" width="672" height="624" key="search.everywhere.popup/0.0.1440.829@0.0.1440.829" timestamp="1596074578300" />
     <state x="385" y="196" width="672" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1596055133727" />
   </component>
