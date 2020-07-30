@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f50071b-ebe4-4d29-a9fa-ff4b5f8a98e0" name="Default Changelist" comment="" />
+    <list default="true" id="4f50071b-ebe4-4d29-a9fa-ff4b5f8a98e0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/h5p/content/6/content.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +19,7 @@
     </execution>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../LMS" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -122,6 +127,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -151,7 +157,7 @@
       <workItem from="1596028007290" duration="568000" />
       <workItem from="1596030755938" duration="2384000" />
       <workItem from="1596033262507" duration="303000" />
-      <workItem from="1596035552140" duration="7046000" />
+      <workItem from="1596035552140" duration="7400000" />
     </task>
     <servers />
   </component>
@@ -177,10 +183,10 @@
     <state x="410" y="175" width="620" height="488" key="find.popup/0.0.1440.827@0.0.1440.827" timestamp="1596068731357" />
     <state x="410" y="175" width="620" height="490" key="find.popup/0.0.1440.829@0.0.1440.829" timestamp="1596069176484" />
     <state x="410" y="190" width="620" height="520" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1596033046748" />
-    <state x="385" y="180" width="672" height="622" key="search.everywhere.popup" timestamp="1596077510820">
+    <state x="385" y="180" width="672" height="622" key="search.everywhere.popup" timestamp="1596077853104">
       <screen x="0" y="0" width="1440" height="827" />
     </state>
-    <state x="385" y="180" width="672" height="622" key="search.everywhere.popup/0.0.1440.827@0.0.1440.827" timestamp="1596077510820" />
+    <state x="385" y="180" width="672" height="622" key="search.everywhere.popup/0.0.1440.827@0.0.1440.827" timestamp="1596077853104" />
     <state x="385" y="180" width="672" height="624" key="search.everywhere.popup/0.0.1440.829@0.0.1440.829" timestamp="1596074578300" />
     <state x="385" y="196" width="672" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1596055133727" />
   </component>
