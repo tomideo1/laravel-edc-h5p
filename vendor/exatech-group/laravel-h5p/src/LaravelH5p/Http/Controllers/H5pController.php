@@ -152,6 +152,10 @@ class H5pController extends Controller
 
 
         $return_id = LaravelH5p::controllerStore($request, $this);
+        if($return_id){
+            $edcH5pClass = new ContentClass($return_id);
+            $edcH5pClass->processCreatedContent();
+        }
 
         if ($return_id) {
             return redirect()
@@ -284,6 +288,8 @@ class H5pController extends Controller
         }*/
 
         $return_id = LaravelH5p::controllerUpdate($request, $this, $id);
+        $edcH5pClass = new ContentClass($return_id);
+        $edcH5pClass->processSavedContent();
 
         if ($return_id) {
             return redirect()
@@ -298,8 +304,6 @@ class H5pController extends Controller
 
     public function show(Request $request, $id)
     {
-        $edcH5pClass = new ContentClass($id);
-        return $edcH5pClass->processCreatedContent();
         $h5p = App::make('LaravelH5p');
         $core = $h5p::$core;
         $settings = $h5p::get_editor();
