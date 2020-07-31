@@ -54,10 +54,10 @@ class LaravelH5p
     public static $contentvalidator = null;
     public static $export = null;
     public static $settings = null;
-    public static  $userId = null;
 
     public function __construct()
     {
+
         self::$interface = new LaravelH5pRepository();
         self::$core = new H5PCore(self::$interface, self::get_h5p_storage('', true), self::get_h5p_url(), config('laravel-h5p.language'), config('laravel-h5p.h5p_export'));
 
@@ -67,8 +67,7 @@ class LaravelH5p
         self::$contentvalidator = new H5PContentValidator(self::$interface, self::$core);
         self::$export = new H5PExport(self::$interface, self::$core);
         self::$h5peditor = new H5peditor(self::$core, new EditorStorage(), new EditorAjaxRepository());
-        $authClass = new AuthClass;
-        self::$userId = $authClass->getAuthUser();
+
         // self::$h5peditor = new H5peditor(self::$core, new EditorStorage(), new EditorAjaxRepository());
     }
 
@@ -528,7 +527,7 @@ class LaravelH5p
             $content = [
                 'disable'    => H5PCore::DISABLE_NONE,
                 // 'user_id'    => Auth::id(),
-                'user_id'    =>  self::$userId,
+                'user_id'    =>  Auth::user()->id,
                 'title'      => $request->get('title'),
                 'embed_type' => 'div',
                 'filtered'   => '',
@@ -620,7 +619,7 @@ class LaravelH5p
             $content = $h5p::get_content($id);
             $content['embed_type'] = 'div';
             // $content['user_id'] = Auth::id();
-            $content['user_id'] = self::$userId;
+            $content['user_id'] = Auth::user()->id;
             $content['disable'] = $request->get('disable') ? $request->get('disable') : false;
             $content['title'] = $request->get('title');
             $content['filtered'] = '';

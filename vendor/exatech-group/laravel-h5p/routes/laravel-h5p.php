@@ -1,6 +1,6 @@
 <?php
 
-Route::group(['middleware' => ['web','auth']], function () {
+Route::group(['middleware' => ['web']], function () {
     if (config('laravel-h5p.use_router') == 'EDITOR' || config('laravel-h5p.use_router') == 'ALL') {
         Route::resource('h5p', "Djoudi\LaravelH5p\Http\Controllers\H5pController");
 

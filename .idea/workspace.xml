@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="4f50071b-ebe4-4d29-a9fa-ff4b5f8a98e0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/EdcH5pClasses/ContentClass.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/EdcH5pClasses/ContentClass.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/h5p/content/17/content.json" beforeDir="false" afterPath="$PROJECT_DIR$/storage/h5p/content/17/content.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/EdcH5pClasses/AuthClass.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/EdcH5pClasses/AuthClass.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/logs/laravel-2020-07-31.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel-2020-07-31.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/routes/laravel-h5p.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/routes/laravel-h5p.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/src/LaravelH5p/Http/Controllers/H5pController.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/src/LaravelH5p/Http/Controllers/H5pController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/src/LaravelH5p/LaravelH5p.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/src/LaravelH5p/LaravelH5p.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +166,8 @@
       <workItem from="1596151878333" duration="1924000" />
       <workItem from="1596153979804" duration="103000" />
       <workItem from="1596154151569" duration="662000" />
-      <workItem from="1596155653811" duration="3301000" />
+      <workItem from="1596155653811" duration="4244000" />
+      <workItem from="1596201054587" duration="1227000" />
     </task>
     <servers />
   </component>
@@ -171,10 +175,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="458" y="212" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1596054573029">
+    <state x="458" y="212" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1596159557363">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="458" y="212" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900@0.0.1440.900" timestamp="1596054573029" />
+    <state x="458" y="212" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900@0.0.1440.900" timestamp="1596159557363" />
     <state x="515" y="271" key="NewPhpClassDialog" timestamp="1596050061227">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -183,23 +187,23 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="236" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1596028402339" />
-    <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1596139528152">
-      <screen x="0" y="0" width="1440" height="827" />
+    <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1596160141275">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1440.827@0.0.1440.827" timestamp="1596139528152" />
-    <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1440.900@0.0.1440.900" timestamp="1596129052227" />
+    <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1440.900@0.0.1440.900" timestamp="1596160141275" />
     <state x="410" y="190" width="620" height="520" key="find.popup" timestamp="1596151398199">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="410" y="175" width="620" height="488" key="find.popup/0.0.1440.827@0.0.1440.827" timestamp="1596068731357" />
     <state x="410" y="175" width="620" height="490" key="find.popup/0.0.1440.829@0.0.1440.829" timestamp="1596069176484" />
     <state x="410" y="190" width="620" height="520" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1596151398199" />
-    <state x="385" y="196" width="672" height="676" key="search.everywhere.popup" timestamp="1596157333489">
-      <screen x="0" y="0" width="1440" height="827" />
+    <state x="385" y="196" width="672" height="676" key="search.everywhere.popup" timestamp="1596203833650">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="385" y="196" width="672" height="676" key="search.everywhere.popup/0.0.1440.827@0.0.1440.827" timestamp="1596157333489" />
     <state x="385" y="180" width="672" height="624" key="search.everywhere.popup/0.0.1440.829@0.0.1440.829" timestamp="1596074578300" />
-    <state x="385" y="196" width="672" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1596152747245" />
+    <state x="385" y="196" width="672" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1596203833650" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

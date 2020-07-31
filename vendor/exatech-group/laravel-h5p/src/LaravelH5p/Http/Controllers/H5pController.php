@@ -2,6 +2,7 @@
 
 namespace Djoudi\LaravelH5p\Http\Controllers;
 
+use App\EdcH5pClasses\AuthClass;
 use App\EdcH5pClasses\LmsGamificationClass;
 use App\Http\Controllers\Controller;
 use App\User;
@@ -18,9 +19,19 @@ use Illuminate\Support\Facades\DB;
 
 class H5pController extends Controller
 {
+    public $user;
+    public  function  __construct() {
+        $this->middleware(function ($request, $next) {
+
+            $this->user = Auth::user();
+
+            return $next($request);
+        });
+    }
+
     public function index(Request $request)
     {
-        $where = H5pContent::orderBy('h5p_contents.id', 'desc');
+        $where = H5pContent::where('user_id',$this->user->id)->orderBy('h5p_contents.id', 'desc');
 
         if ($request->query('sf') && $request->query('s')) {
             if ($request->query('sf') == 'title') {
@@ -170,6 +181,7 @@ class H5pController extends Controller
 
     public function edit(Request $request, $id)
     {
+
         $h5p = App::make('LaravelH5p');
         $core = $h5p::$core;
         $editor = $h5p::$h5peditor;
@@ -304,6 +316,10 @@ class H5pController extends Controller
 
     public function show(Request $request, $id)
     {
+        $content = H5pContent::where('id',$id)->exists();
+        if(!$content){
+            abort('403');
+        }
         $h5p = App::make('LaravelH5p');
         $core = $h5p::$core;
         $settings = $h5p::get_editor();
@@ -313,8 +329,8 @@ class H5pController extends Controller
 
         $settings = $embed['settings'];
         $title = $content['title'];
-
-        $user = User::find(1);
+        $authClass = new AuthClass();
+        $user = Auth::user() ?? $authClass->getAuthUser();
         // create event dispatch
         event(new H5pEvent('content', null, $content['id'], $content['title'], $content['library']['name'], $content['library']['majorVersion'], $content['library']['minorVersion']));
 
