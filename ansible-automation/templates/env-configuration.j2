@@ -1,0 +1,5 @@
+{% for component in config_section %}
+{% for setting in component.settings %}
+{{ setting.name }}={{ setting.value }}
+{% endfor %}
+{% endfor %}

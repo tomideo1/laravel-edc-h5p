@@ -1,0 +1,147 @@
+- hosts: lms_aws
+  remote_user: ubuntu
+  vars:
+    git_branch: master
+    dest_path: /var/www/portal.games.edc.hostville.link/
+    repo: https://tomideo1:f9a99ee9c1c629dd279ce33b0bf372f11d29975c@github.com/tomideo1/laravel-edc-h5p.git
+    server_state: started
+    etc:
+      env:
+        - settings:
+            - name: "APP_NAME"
+              value: "EDC-LMS"
+            - name: "APP_ENV"
+              value: "production"
+            - name: "APP_KEY"
+              value: "base64:aZMMK7n5FSrf7cV4JMZnkP7IrpfQbeupPEv34F1kRFI="
+            - name: "APP_DEBUG"
+              value: "false"
+            - name: "APP_LOG_LEVEL"
+              value: "debug"
+            - name: "APP_URL"
+              value: "https://portal.games.edc.hostville.link/"
+            - name: "APP_DOMAIN"
+              value: "https://portal.games.edc.hostville.link/"
+            - name: "DB_CONNECTION"
+              value: "mysql"
+            - name: "DB_HOST"
+              value: "127.0.0.1"
+            - name: "DB_DATABASE"
+              value: "lms_db_staging"
+            - name: "DB_USERNAME"
+              value: "new_lms_user"
+            - name: "DB_PASSWORD"
+              value: "yEbv.V9bg5JZxMhcAFff"
+
+  tasks:
+    - name: clear out deploy path
+      command: rm -rf {{ dest_path }}
+      become: yes
+      become_method: sudo
+      tags:
+        - cleanup
+        - deploy
+    - name: pull source from the gitlab repository
+      git: repo={{ repo }} dest={{ dest_path }} accept_hostkey=yes version={{ git_branch | default('master') }}
+      become: yes
+      become_method: sudo
+      tags:
+        - pull
+        - deploy
+    - name: adjust privileges and ownerships for the directories and create log files
+      file:
+        path="{{ item.path }}"
+        state={{ item.state | default(omit) }}
+        mode={{ item.mode | default('u=rwx,g=rwx,o=rx') }}
+        group={{ item.group | default('www-data') }}
+        owner={{ ansible_user }}
+        recurse={{ item.recurse | default(omit) }}
+      with_items:
+        - { path: "{{ dest_path }}", state: "directory", recurse: "yes" }
+        - { path: "{{ dest_path }}/storage", state: "directory", recurse: "yes", mode: 'u=rwx,g=rwx,o=rwx' }
+        - { path: "{{ dest_path }}/storage/logs", state: "directory", recurse: "yes", mode: 'u=rwx,g=rwx,o=rw' }
+        #        - { path: "{{ dest_path }}/storage/logs/lumen.log", state: "touch", mode: 'u=rwx,g=rw,o=rw' }
+        - { path: "{{ dest_path }}/artisan", state: "file", mode: 'u=rwx,g=rx,o=x' }
+      become: yes
+      become_method: sudo
+      tags:
+        - configuration
+        - permissions
+    - include_tasks: ansible-automation/tasks/create-env-configuration.yml
+      vars:
+        filename: .env
+        destination: "{{ dest_path }}/.env"
+        config_section: "{{ etc.env }}"
+      tags:
+        - configuration
+    - name: set permissions on all files
+      command: find "{{ dest_path }}" -type f -name '*.php' -exec chmod 644 {} \;
+      tags:
+        - configuration
+      become: yes
+      become_method: sudo
+    - name: get composer setup
+      get_url: url=https://getcomposer.org/installer dest="{{ dest_path }}/composer-setup.php"
+      tags:
+        - composer
+        - install
+      become: yes
+      become_method: sudo
+    - name: install composer
+      command: php composer-setup.php
+      args:
+        creates: composer.phar
+        chdir: "{{ dest_path }}"
+      tags:
+        - composer
+        - install
+      become: yes
+      become_method: sudo
+    - name: remove composer-setup.php script
+      file: path="{{ dest_path }}/composer-setup.php" state=absent
+      tags:
+        - composer
+        - install
+      become: yes
+      become_method: sudo
+    - name: install composer packages
+      command: php composer.phar install
+      args:
+        chdir: "{{ dest_path }}"
+      tags:
+        - composer
+        - install
+      notify:
+        - manage nginx
+      become: yes
+      become_method: sudo
+    - name: migrate databases
+      command: php artisan migrate --force
+      args:
+        chdir: "{{ dest_path }}"
+      tags:
+        - artisan
+        - migrate
+  #    - name: install wkhtmltopdf dependencies - zlib, fontconfig, freetype, X11 libs (libX11, libXext, libXrender)
+  #      apt: name={{ item.1 }} state=present update_cache=yes cache_valid_time=1200
+  #      with_indexed_items:
+  #        - openssl
+  #        - build-essential
+  #        - libssl-dev
+  #        - libx11-dev
+  #        - libxrender-dev
+  #        - libxext-dev
+  #        - libfontconfig1-dev
+  #        - libfreetype6-dev
+  #        - fontconfig
+  #      become: yes
+  #      become_method: sudo
+  handlers:
+    - name: manage nginx
+      service: name=nginx state={{ server_state | default(started) }}
+      become: yes
+      become_method: sudo
+    - name: start supervisor
+      command: supervisorctl start all
+      become: yes
+      become_method: sudo

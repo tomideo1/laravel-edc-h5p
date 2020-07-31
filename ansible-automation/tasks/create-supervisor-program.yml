@@ -1,0 +1,12 @@
+---
+# the supervisor configuration creation task
+- name: creating the "{{ program.name }}" configuration file
+  template:
+    src: ansible-automation/templates/supervisor-configuration.j2
+    dest: "/etc/supervisor/conf.d/{{ program.name }}.conf"
+    mode: "{{ mode | default(0644) }}"
+    owner: "root"
+    group: "root"
+    force: "{{ force | default(yes) }}"
+  become: yes
+  become_method: sudo

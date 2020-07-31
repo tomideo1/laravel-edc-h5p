@@ -1,0 +1,4 @@
+[program:{{ program.name }}]
+{% for setting in program.settings %}
+{{ setting.name }}={{ setting.value }}
+{% endfor %}
