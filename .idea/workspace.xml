@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f50071b-ebe4-4d29-a9fa-ff4b5f8a98e0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/EdcH5pClasses/ContentClass.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/EdcH5pClasses/ContentClass.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/h5p/content/12/content.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/h5p/editor/images/image-5f235cd4c9d64.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/h5p/editor/images/image-5f235cf67fc38.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/logs/laravel-2020-07-31.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel-2020-07-31.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/src/LaravelH5p/Http/Controllers/H5pController.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/src/LaravelH5p/Http/Controllers/H5pController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/h5p/content/17/content.json" beforeDir="false" afterPath="$PROJECT_DIR$/storage/h5p/content/17/content.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +163,7 @@
       <workItem from="1596151878333" duration="1924000" />
       <workItem from="1596153979804" duration="103000" />
       <workItem from="1596154151569" duration="662000" />
-      <workItem from="1596155653811" duration="3000000" />
+      <workItem from="1596155653811" duration="3301000" />
     </task>
     <servers />
   </component>

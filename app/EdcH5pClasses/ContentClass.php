@@ -69,7 +69,6 @@ class ContentClass
 
     }
 
-
     public  function processSavedContent()  {
         $contentObj  = H5pContent::where('id',$this->content)->first();
         $params = $contentObj->parameters;

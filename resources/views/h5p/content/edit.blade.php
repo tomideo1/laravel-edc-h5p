@@ -75,9 +75,9 @@
                     <label for="inputAction" class="control-label col-md-3">{{ trans('laravel-h5p.content.action') }}</label>
                     <div class="col-md-6">
 
-                        <label class="radio-inline">
-                            <input type="radio" name="action" value="upload" class="laravel-h5p-type" >{{ trans('laravel-h5p.content.action_upload') }}
-                        </label>
+{{--                        <label class="radio-inline">--}}
+{{--                            <input type="radio" name="action" value="upload" class="laravel-h5p-type" >{{ trans('laravel-h5p.content.action_upload') }}--}}
+{{--                        </label>--}}
                         <label class="radio-inline">
                             <input type="radio" name="action" value="create" class="laravel-h5p-type" checked="checked"/>{{ trans('laravel-h5p.content.action_create') }}
                         </label>
