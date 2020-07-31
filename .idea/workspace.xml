@@ -2,613 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f50071b-ebe4-4d29-a9fa-ff4b5f8a98e0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ansible-automation/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible-automation/tasks/create-env-configuration.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible-automation/tasks/create-ini-configuration.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible-automation/tasks/create-supervisor-program.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible-automation/templates/env-configuration.j2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible-automation/templates/ini-configuration.j2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible-automation/templates/supervisor-configuration.j2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lms-games.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/H5Pv2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/H5Pv2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/EdcH5pClasses/AuthClass.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/EdcH5pClasses/ContentClass.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/EdcH5pClasses/LmsGamificationClass.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/logs/laravel-2020-07-31.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel-2020-07-31.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/SECURITY.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/assets/css/laravel-h5p.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/assets/js/laravel-h5p-editor.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/assets/js/laravel-h5p-library.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/assets/js/laravel-h5p-result.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/assets/js/laravel-h5p.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/assets/scss/laravel-h5p.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/composer.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/config/laravel-h5p.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/lang/ar/laravel-h5p.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/lang/en/laravel-h5p.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/lang/fr/laravel-h5p.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/migrations/2017_05_10_015415_create_h5p_contents_libraries_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/migrations/2017_05_10_015415_create_h5p_contents_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/migrations/2017_05_10_015415_create_h5p_contents_tags_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/migrations/2017_05_10_015415_create_h5p_contents_user_data_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/migrations/2017_05_10_015415_create_h5p_counters_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/migrations/2017_05_10_015415_create_h5p_event_logs_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/migrations/2017_05_10_015415_create_h5p_libraries_cachedassets_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/migrations/2017_05_10_015415_create_h5p_libraries_hub_cache_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/migrations/2017_05_10_015415_create_h5p_libraries_languages_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/migrations/2017_05_10_015415_create_h5p_libraries_libraries_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/migrations/2017_05_10_015415_create_h5p_libraries_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/migrations/2017_05_10_015415_create_h5p_results_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/migrations/2017_05_10_015415_create_h5p_tmpfiles_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/phpunit.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/routes/laravel-h5p.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/seeds/H5pUserSeeder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/src/LaravelH5p/Commands/MigrationCommand.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/src/LaravelH5p/Commands/ResetCommand.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/src/LaravelH5p/Eloquents/H5pContent.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/src/LaravelH5p/Eloquents/H5pContentsLibrary.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/src/LaravelH5p/Eloquents/H5pContentsTag.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/src/LaravelH5p/Eloquents/H5pContentsUserData.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/src/LaravelH5p/Eloquents/H5pCounter.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/src/LaravelH5p/Eloquents/H5pEvent.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/src/LaravelH5p/Eloquents/H5pEventLog.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/src/LaravelH5p/Eloquents/H5pLibrariesCachedasset.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/src/LaravelH5p/Eloquents/H5pLibrariesHubCache.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/src/LaravelH5p/Eloquents/H5pLibrariesLanguage.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/src/LaravelH5p/Eloquents/H5pLibrariesLibrary.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/src/LaravelH5p/Eloquents/H5pLibrary.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/src/LaravelH5p/Eloquents/H5pResult.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/src/LaravelH5p/Eloquents/H5pTag.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/src/LaravelH5p/Eloquents/H5pTmpfile.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/src/LaravelH5p/Events/H5pEvent.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/src/LaravelH5p/Events/H5pResultEvent.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/src/LaravelH5p/Exceptions/H5PException.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/src/LaravelH5p/Exceptions/H5PExceptionHandler.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/src/LaravelH5p/Facades/LaravelH5p.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/src/LaravelH5p/Helpers/H5pHelper.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/src/LaravelH5p/Http/Controllers/AjaxController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/src/LaravelH5p/Http/Controllers/DownloadController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/src/LaravelH5p/Http/Controllers/EmbedController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/src/LaravelH5p/Http/Controllers/H5pController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/src/LaravelH5p/Http/Controllers/LibraryController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/src/LaravelH5p/Http/Middleware/IeFix.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/src/LaravelH5p/LaravelH5p.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/src/LaravelH5p/LaravelH5pServiceProvider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/src/LaravelH5p/Notifications/H5pNotification.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/src/LaravelH5p/Repositories/EditorAjaxRepository.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/src/LaravelH5p/Repositories/LaravelH5pRepository.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/src/LaravelH5p/Storages/EditorStorage.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/src/LaravelH5p/Storages/LaravelH5pStorage.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/tests/Feature/InialTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/tests/TestCase.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/views/h5p/content/create.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/views/h5p/content/edit.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/views/h5p/content/embed.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/views/h5p/content/index.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/views/h5p/content/show.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/views/h5p/layouts/h5p.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/views/h5p/library/index.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/exatech-group/laravel-h5p/views/h5p/library/show.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-core/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-core/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-core/README.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-core/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-core/doc/spec_en.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-core/embed.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-core/fonts/h5p-core-23.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-core/fonts/h5p-core-23.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-core/fonts/h5p-core-23.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-core/fonts/h5p-core-23.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-core/h5p-default-storage.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-core/h5p-development.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-core/h5p-event-base.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-core/h5p-file-storage.interface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-core/h5p-metadata.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-core/h5p.classes.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-core/images/h5p.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-core/images/throbber.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-core/js/h5p-action-bar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-core/js/h5p-confirmation-dialog.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-core/js/h5p-content-type.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-core/js/h5p-content-upgrade-process.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-core/js/h5p-content-upgrade-worker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-core/js/h5p-content-upgrade.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-core/js/h5p-data-view.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-core/js/h5p-display-options.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-core/js/h5p-embed.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-core/js/h5p-event-dispatcher.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-core/js/h5p-library-details.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-core/js/h5p-library-list.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-core/js/h5p-resizer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-core/js/h5p-utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-core/js/h5p-version.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-core/js/h5p-x-api-event.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-core/js/h5p-x-api.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-core/js/h5p.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-core/js/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-core/js/request-queue.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-core/js/settings/h5p-disable-hub.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-core/styles/h5p-admin.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-core/styles/h5p-confirmation-dialog.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-core/styles/h5p-core-button.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-core/styles/h5p.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/CHANGES.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/adapters/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/build-config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/ckeditor.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/contents.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/af.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/ar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/az.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/bg.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/bn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/bs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/ca.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/cs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/cy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/da.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/de-ch.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/de.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/el.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/en-au.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/en-ca.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/en-gb.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/en.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/eo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/es-mx.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/es.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/et.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/eu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/fa.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/fi.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/fo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/fr-ca.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/fr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/gl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/gu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/he.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/hi.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/hr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/hu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/id.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/is.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/it.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/ja.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/ka.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/km.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/ko.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/ku.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/lt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/lv.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/mk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/mn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/ms.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/nb.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/nl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/no.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/oc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/pl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/pt-br.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/pt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/ro.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/ru.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/si.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/sk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/sl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/sq.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/sr-latn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/sr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/sv.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/th.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/tr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/tt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/ug.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/uk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/vi.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/zh-cn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/lang/zh.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/af.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/ar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/az.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/bg.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/ca.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/cs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/cy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/da.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/de-ch.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/de.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/el.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/en-au.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/en-gb.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/en.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/eo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/es-mx.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/es.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/et.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/eu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/fa.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/fi.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/fo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/fr-ca.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/fr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/gl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/gu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/he.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/hi.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/hr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/hu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/id.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/it.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/ja.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/km.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/ko.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/ku.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/lt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/lv.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/mn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/nb.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/nl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/no.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/oc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/pl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/pt-br.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/pt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/ro.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/ru.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/si.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/sk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/sl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/sq.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/sr-latn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/sr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/sv.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/th.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/tr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/tt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/ug.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/uk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/vi.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/zh-cn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/a11yhelp/dialogs/lang/zh.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/clipboard/dialogs/paste.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/colordialog/dialogs/colordialog.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/colordialog/dialogs/colordialog.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/dialog/dialogDefinition.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/icons.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/icons_hidpi.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/lineheight/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/ansible-automation/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/lineheight/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/lineheight/readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/link/dialogs/anchor.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/link/dialogs/link.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/link/images/anchor.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/link/images/hidpi/anchor.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/magicline/images/hidpi/icon-rtl.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/magicline/images/hidpi/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/magicline/images/icon-rtl.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/magicline/images/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/pastefromword/filter/default.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/removeRedundantNBSP/plugin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/af.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/ar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/az.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/bg.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/ca.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/cs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/cy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/da.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/de-ch.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/de.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/el.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/en-au.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/en-ca.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/en-gb.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/en.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/eo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/es-mx.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/es.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/et.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/eu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/fa.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/fi.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/fr-ca.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/fr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/gl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/he.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/hr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/hu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/id.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/it.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/ja.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/km.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/ko.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/ku.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/lt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/lv.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/nb.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/nl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/no.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/oc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/pl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/pt-br.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/pt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/ro.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/ru.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/si.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/sk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/sl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/sq.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/sr-latn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/sr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/sv.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/th.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/tr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/tt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/ug.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/uk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/vi.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/zh-cn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/lang/zh.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/specialchar/dialogs/specialchar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/table/dialogs/table.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/plugins/tabletools/dialogs/tableCell.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/css/samples.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/img/github-top.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/img/header-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/img/header-separator.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/img/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/img/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/img/navigation-tip.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/js/sample.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/js/sf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/old/ajax.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/old/api.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/old/appendto.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/old/assets/inlineall/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/old/assets/outputxhtml/outputxhtml.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/old/assets/posteddata.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/old/assets/sample.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/old/assets/uilanguages/languages.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/old/autogrow/autogrow.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/old/datafiltering.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/old/dialog/assets/my_dialog.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/old/dialog/dialog.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/old/divreplace.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/old/enterkey/enterkey.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.fla" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.swf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/old/htmlwriter/assets/outputforflash/swfobject.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/old/htmlwriter/outputforflash.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/old/htmlwriter/outputhtml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/old/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/old/inlineall.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/old/inlinebycode.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/old/inlinetextarea.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/old/jquery.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/old/magicline/magicline.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/old/readonly.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/old/replacebyclass.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/old/replacebycode.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/old/sample.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/old/sample.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/old/sample_posteddata.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/old/tabindex.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/old/toolbar/toolbar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/old/uicolor.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/old/uilanguages.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/old/wysiwygarea/fullpage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/old/xhtmlstyle.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/toolbarconfigurator/css/fontello.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/toolbarconfigurator/font/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/toolbarconfigurator/font/config.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/toolbarconfigurator/font/fontello.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/toolbarconfigurator/font/fontello.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/toolbarconfigurator/font/fontello.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/toolbarconfigurator/font/fontello.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/toolbarconfigurator/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/toolbarconfigurator/js/abstracttoolbarmodifier.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/toolbarconfigurator/js/fulltoolbareditor.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/toolbarconfigurator/js/toolbarmodifier.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/toolbarconfigurator/js/toolbartextmodifier.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/toolbarconfigurator/lib/codemirror/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/toolbarconfigurator/lib/codemirror/javascript.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/toolbarconfigurator/lib/codemirror/neo.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/.temp/css/dialog.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/.temp/css/dialog_ie.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/.temp/css/dialog_ie7.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/.temp/css/dialog_ie8.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/.temp/css/dialog_iequirks.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/.temp/css/dialog_opera.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/.temp/css/editor.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/.temp/css/editor_gecko.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/.temp/css/editor_ie.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/.temp/css/editor_ie7.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/.temp/css/editor_ie8.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/.temp/css/editor_iequirks.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/dialog.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/dialog_ie.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/dialog_ie7.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/dialog_ie8.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/dialog_iequirks.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/dialog_opera.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/editor.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/editor_gecko.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/editor_ie.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/editor_ie7.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/editor_ie8.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/editor_iequirks.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/icons.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/icons_hidpi.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/images/arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/images/close.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/images/hidpi/close.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/images/hidpi/lock-open.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/images/hidpi/lock.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/images/hidpi/refresh.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/images/lock-open.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/images/lock.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/images/refresh.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/sample/bootstrapck-sample.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/sample/css/bootstrapck-sample.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/sample/js/analytics.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/sample/js/jquery-1.11.0.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/scss/browser-specific/gecko/editor_gecko.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/scss/browser-specific/ie/dialog_ie.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/scss/browser-specific/ie/editor_ie.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/scss/browser-specific/ie7/dialog_ie7.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/scss/browser-specific/ie7/editor_ie7.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/scss/browser-specific/ie8/dialog_ie8.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/scss/browser-specific/ie8/editor_ie8.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/scss/browser-specific/iequirks/dialog_iequirks.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/scss/browser-specific/iequirks/editor_iequirks.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/scss/browser-specific/opera/dialog_opera.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/scss/components/_colorpanel.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/scss/components/_elementspath.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/scss/components/_mainui.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/scss/components/_menu.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/scss/components/_panel.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/scss/components/_presets.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/scss/components/_reset.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/scss/components/_richcombo.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/scss/components/_toolbar.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/scss/components/editor.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/scss/config/_colors.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/scss/config/_config.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/scss/config/_defaults.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/skins/bootstrapck/scss/dialog/dialog.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/ckeditor/styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/h5peditor-ajax.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/h5peditor-ajax.interface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/h5peditor-file.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/h5peditor-storage.interface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/h5peditor.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/images/add.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/images/binary-file.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/images/collapse.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/images/down.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/images/expand.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/images/order.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/images/remove.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/images/transparent-background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/images/webm-file.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/language/ar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/language/bs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/language/de.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/language/el.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/language/en.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/language/es-cr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/language/es-mx.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/language/es.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/language/et.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/language/eu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/language/fi.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/language/fr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/language/it.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/language/nb.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/language/nl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/language/nn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/language/pl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/language/pt-br.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/language/pt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/language/ru.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/language/tr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/libs/darkroom.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/libs/darkroom.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/libs/fabric.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/libs/zebra_datepicker.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/scripts/h5p-hub-client.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/scripts/h5peditor-av.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/scripts/h5peditor-boolean.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/scripts/h5peditor-coordinates.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/scripts/h5peditor-dimensions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/scripts/h5peditor-editor.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/scripts/h5peditor-file-uploader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/scripts/h5peditor-file.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/scripts/h5peditor-form.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/scripts/h5peditor-fullscreen-bar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/scripts/h5peditor-group.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/scripts/h5peditor-html.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/scripts/h5peditor-image-popup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/scripts/h5peditor-image.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/scripts/h5peditor-init.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/scripts/h5peditor-library-list-cache.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/scripts/h5peditor-library-selector.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/scripts/h5peditor-library.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/scripts/h5peditor-list-editor.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/scripts/h5peditor-list.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/scripts/h5peditor-metadata-author-widget.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/scripts/h5peditor-metadata-changelog-widget.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/scripts/h5peditor-metadata.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/scripts/h5peditor-none.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/scripts/h5peditor-number.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/scripts/h5peditor-pre-save.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/scripts/h5peditor-select.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/scripts/h5peditor-selector-hub.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/scripts/h5peditor-selector-legacy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/scripts/h5peditor-semantic-structure.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/scripts/h5peditor-text.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/scripts/h5peditor-textarea.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/scripts/h5peditor.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/styles/config.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/styles/css/application.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/styles/css/fonts.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/styles/css/fonts/h5p-fullscreen-bar.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/styles/css/fonts/h5p-fullscreen-bar.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/styles/css/fonts/h5p-fullscreen-bar.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/styles/css/fonts/h5p-fullscreen-bar.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/styles/css/fonts/h5p-hub.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/styles/css/fonts/h5p-hub.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/styles/css/fonts/h5p-hub.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/styles/css/fonts/h5p-hub.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/styles/css/fonts/h5p-metadata-icons.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/styles/css/fonts/h5p-metadata-icons.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/styles/css/fonts/h5p-metadata-icons.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/styles/css/fonts/h5p-metadata-icons.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/styles/css/h5p-hub-client.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/styles/css/libs/icons.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/styles/css/libs/zebra_datepicker.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/styles/scss/_copy-paste.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/styles/scss/_deprecated.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/styles/scss/_form-field.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/styles/scss/_form-groups.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/styles/scss/_fullscreen-bar.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/styles/scss/_h5peditor-image-edit-popup.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/styles/scss/_h5peditor-image-edit.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/styles/scss/_metadata-author-widget.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/styles/scss/_metadata-changelog-widget.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/styles/scss/_metadata-form.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/styles/scss/_metadata-popup.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/styles/scss/_mixins.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/styles/scss/_utils.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/styles/scss/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/h5p/h5p-editor/styles/scss/application.scss" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -623,6 +20,105 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/h5p/h5p-core" />
+      <path value="$PROJECT_DIR$/vendor/h5p/h5p-editor" />
+      <path value="$PROJECT_DIR$/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/erusev/parsedown" />
+      <path value="$PROJECT_DIR$/vendor/opis/closure" />
+      <path value="$PROJECT_DIR$/vendor/twbs/bootstrap-sass" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/vendor/tomide/laravel-h5p" />
+      <path value="$PROJECT_DIR$/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-iconv" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/fideloper/proxy" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/beyondcode/laravel-dump-server" />
+      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-highlighter" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-color" />
+      <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+    </include_path>
   </component>
   <component name="ProjectId" id="1fFWQrjXPpXrfJA1Eeicvkc64f5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -640,6 +136,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Models" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$" />
@@ -677,7 +176,7 @@
       <workItem from="1596153979804" duration="103000" />
       <workItem from="1596154151569" duration="662000" />
       <workItem from="1596155653811" duration="4244000" />
-      <workItem from="1596201054587" duration="9415000" />
+      <workItem from="1596201054587" duration="10267000" />
     </task>
     <servers />
   </component>
@@ -708,12 +207,12 @@
     <state x="410" y="175" width="620" height="488" key="find.popup/0.0.1440.827@0.0.1440.827" timestamp="1596068731357" />
     <state x="410" y="175" width="620" height="490" key="find.popup/0.0.1440.829@0.0.1440.829" timestamp="1596069176484" />
     <state x="410" y="190" width="620" height="520" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1596214692068" />
-    <state x="385" y="196" width="672" height="676" key="search.everywhere.popup" timestamp="1596209379656">
+    <state x="385" y="196" width="672" height="676" key="search.everywhere.popup" timestamp="1596218078457">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="385" y="196" width="672" height="676" key="search.everywhere.popup/0.0.1440.827@0.0.1440.827" timestamp="1596157333489" />
     <state x="385" y="180" width="672" height="624" key="search.everywhere.popup/0.0.1440.829@0.0.1440.829" timestamp="1596074578300" />
-    <state x="385" y="196" width="672" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1596209379656" />
+    <state x="385" y="196" width="672" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1596218078457" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
