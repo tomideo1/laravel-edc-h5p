@@ -1,6 +1,10 @@
 <?php
 namespace App\EdcH5pClasses;
+use Carbon\Carbon;
 use Djoudi\LaravelH5p\Eloquents\H5pContent as H5pContent;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Storage;
 
 class ContentClass
 {
@@ -11,35 +15,53 @@ class ContentClass
     }
 
 
-    public function processContent(){
+    public function processCreatedContent() {
         $contentObj  = H5pContent::where('id',$this->content)->first();
         $params = $contentObj->parameters;
         return $this->handleFileManager($params);
     }
 
-    private function handleFileManager($params){
-        dd(collect(json_decode($params,true))->pluck(''));
+    private function handleFileManager($params)  {
+        $path = storage_path('/h5p/content/'.$this->content);
+        if(!File::isDirectory($path)){
+            File::makeDirectory($path,0777,true,true);
+            $current_files =  $this->fetchAllStoredTempFiles();
+            foreach ($current_files as $file){
+                $current_file =  $this->fileTypeAnalyzer($file);
+                dd($current_file);
+            }
 
-//        dd(preg_grep("/image-/i",));
-//        $split_string = preg_split("/images/",$params);
-//        if(!empty($split_string)){
-//            foreach ($split_string as $str){
-//                dd($str);
-//            }
-//        }
-//        switch (true){
-//            case 'image':
-//                dd(preg_split("/images/",$params));
-//            break;
-//            case 'audio':
-//                dd(preg_split("/audio/",$params));
-//                break;
-//            default:
-//            break;
-//        }
+
+//            $contents = file_put_contents('content.json',$params);
+//            Storage::put('./h5p/content/'.$this->content.'/', $params);
+        }
+        File::put($path.'/content.json', $params);
+        $current_files =  $this->fetchAllStoredTempFiles();
+        foreach ($current_files as $file){
+            $current_file =  $this->fileTypeAnalyzer($file->path);
+            dd($current_file);
+        }
+        return;
+    }
+
+
+    public  function processSavedContent()  {
+        $contentObj  = H5pContent::where('id',$this->content)->first();
+        $params = $contentObj->parameters;
+        return $this->handleFileManager($params);
+    }
+
+    private function fetchAllStoredTempFiles(){
+        return DB::table('h5p_tmpfiles')
+            ->select('path')
+            ->where('created_at' ,'!=' , Carbon::now())
+            ->get();
 
     }
 
+    private  function fileTypeAnalyzer(string $path){
+        return $path;
+    }
 
 
 

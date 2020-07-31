@@ -57,7 +57,6 @@ class H5pController extends Controller
 
         // create event dispatch
         event(new H5pEvent('content', 'new'));
-
         $user = Auth::user();
 
         return view('h5p.content.create', compact('settings', 'user', 'library', 'parameters', 'display_options'));
@@ -300,7 +299,7 @@ class H5pController extends Controller
     public function show(Request $request, $id)
     {
         $edcH5pClass = new ContentClass($id);
-//         return $edcH5pClass->processContent();
+        return $edcH5pClass->processCreatedContent();
         $h5p = App::make('LaravelH5p');
         $core = $h5p::$core;
         $settings = $h5p::get_editor();

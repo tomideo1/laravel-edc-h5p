@@ -39,12 +39,12 @@ Route::group(['middleware' => ['web','auth']], function () {
 
 
 Route::prefix('api')->group(function () {
-    Route::group(['middleware' => ['web']], function () {
+    Route::group(['middleware' => ['web','auth']], function () {
 
         Route::get('h5p/dom/{id?}', '\Djoudi\LaravelH5p\Http\Controllers\AjaxController@dom')->name('h5p.dom');
 
-//        Route::resource('h5p', "Djoudi\LaravelH5p\Http\Controllers\H5pController");
-        Route::get('h5p/{id}','Djoudi\LaravelH5p\Http\Controllers\H5pController@show');
+        Route::resource('h5p', "Djoudi\LaravelH5p\Http\Controllers\H5pController");
+//        Route::get('h5p/{id}','Djoudi\LaravelH5p\Http\Controllers\H5pController@show');
         Route::match(['GET', 'POST'], 'ajax/libraries', 'Djoudi\LaravelH5p\Http\Controllers\AjaxController@libraries')->name('h5p.ajax.libraries');
         Route::get('ajax', 'Djoudi\LaravelH5p\Http\Controllers\AjaxController')->name('h5p.ajax');
         Route::get('ajax/libraries', 'Djoudi\LaravelH5p\Http\Controllers\AjaxController@libraries')->name('h5p.ajax.libraries');
@@ -65,12 +65,12 @@ Route::prefix('api')->group(function () {
             Route::post('ajax/finish', 'Djoudi\LaravelH5p\Http\Controllers\AjaxController@finish')->name('h5p.ajax.finish');
         });
 
-//        Route::get('library', "Djoudi\LaravelH5p\Http\Controllers\LibraryController@index")->name('h5p.library.index');
-//            Route::get('library/show/{id}', "Djoudi\LaravelH5p\Http\Controllers\LibraryController@show")->name('h5p.library.show');
-//            Route::post('library/store', "Djoudi\LaravelH5p\Http\Controllers\LibraryController@store")->name('h5p.library.store');
-//            Route::delete('library/destroy', "Djoudi\LaravelH5p\Http\Controllers\LibraryController@destroy")->name('h5p.library.destroy');
-//            Route::get('library/restrict', "Djoudi\LaravelH5p\Http\Controllers\LibraryController@restrict")->name('h5p.library.restrict');
-//            Route::post('library/clear', "Djoudi\LaravelH5p\Http\Controllers\LibraryController@clear")->name('h5p.library.clear');
+        Route::get('library', "Djoudi\LaravelH5p\Http\Controllers\LibraryController@index")->name('h5p.library.index');
+            Route::get('library/show/{id}', "Djoudi\LaravelH5p\Http\Controllers\LibraryController@show")->name('h5p.library.show');
+            Route::post('library/store', "Djoudi\LaravelH5p\Http\Controllers\LibraryController@store")->name('h5p.library.store');
+            Route::delete('library/destroy', "Djoudi\LaravelH5p\Http\Controllers\LibraryController@destroy")->name('h5p.library.destroy');
+            Route::get('library/restrict', "Djoudi\LaravelH5p\Http\Controllers\LibraryController@restrict")->name('h5p.library.restrict');
+            Route::post('library/clear', "Djoudi\LaravelH5p\Http\Controllers\LibraryController@clear")->name('h5p.library.clear');
 
     });
 });

@@ -29,6 +29,7 @@ class AjaxController extends Controller
             // Log library load
             event(new H5pEvent('library', null, null, null, $machineName, $major_version.'.'.$minor_version));
         } else {
+
             // Otherwise retrieve all libraries
             $editor->ajax->action(H5PEditorEndpoints::LIBRARIES);
         }
@@ -81,20 +82,20 @@ class AjaxController extends Controller
         $user_id = \Auth::id();
         //dd($request);
 
-        
+
 
         if ((int)$user_id > 0) {
 
             $referer = app('Illuminate\Routing\UrlGenerator')->previous();
 
             //test si appel depuis mobile
-            //'${Connexion.instance.urlBase}${Connexion.instance.urlH5P}/${act.h5pId}?l=${act.afll.learningpathId}&a=${act.id}&afll=${act.afll.id}&f=${act.afll.formationId}';          
+            //'${Connexion.instance.urlBase}${Connexion.instance.urlH5P}/${act.h5pId}?l=${act.afll.learningpathId}&a=${act.id}&afll=${act.afll.id}&f=${act.afll.formationId}';
             //$re = '/^((http|https):\/\/)([^:\/\s]+)(\/api\/h5p\/(?P<h5p_id>[\d]+)\?l=)(?P<learningpath_id>[\d]+)(\&a=)(?P<activity_id>[\d]+)(\&afll=)(?P<afll_id>[\d]+)(\&f=)(?P<formation_id>[\d]+)([\D]*)$/m';
             $re = '/^((http|https):\/\/)([^:\/\s]+)(\/api\/h5p\/(?P<h5p_id>[\d]+)\?)([\S]*)$/m';
             $find = preg_match_all($re, $referer, $matches, PREG_SET_ORDER, 0);
 
             if ($find !== false && $find > 0) {//cas de l'app mobile qui est appelant
-               
+
                 $formation_id = 0;
                 $learningpath_id = 0;
                 $activity_id = 0;
@@ -127,9 +128,9 @@ class AjaxController extends Controller
                 }
 
                 $client = 'mobile';
-            } else {//cas du client web browser                     
+            } else {//cas du client web browser
                 //https://lmscc.test/data/formations/1/learningpaths/1/activityshow/1
-               
+
                 $re = '/^((http|https):\/\/)([^:\/\s]+)(\/data\/formations\/)(?P<formation_id>[\d]+)(\/learningpaths\/)(?P<learningpath_id>[\d]+)(\/activityshow\/)(?P<activity_id>[\d]+)([\D]*)$/m';
 
                 $find = preg_match_all($re, $referer, $matches, PREG_SET_ORDER, 0);
@@ -143,7 +144,7 @@ class AjaxController extends Controller
 
             if(config('app.env') !== 'production'){
                 //Log::debug($client.'_'.$user_id.'_'.$formation_id.'_'.$learningpath_id.'_'.$activity_id.'_');
-            } 
+            }
 
             $h5p_url = $request->input('object.id');
             $url_parts = explode('/', $h5p_url);//"http://lmscc.test/api/h5p/embed/13?subContentId=564bbacf-c83a-4511-9831-d8a4af1305eb"
@@ -158,7 +159,7 @@ class AjaxController extends Controller
             $finished = false;
             if (/*$request->input('verb.id') == "http://adlnet.gov/expapi/verbs/answered" ||*/ $request->input('verb.id') == "http://adlnet.gov/expapi/verbs/completed") {
                 $finished = true;
-              
+
             }
 
             if ($request->input('result.completion') == 1){
@@ -183,24 +184,24 @@ class AjaxController extends Controller
                 'activity_id' => $activity_id,
                 'completion' => $finished ? 100 : 0
             ];
-			
+
 			if((int)$result['time'] == 0){//ne pas reset le temps deja pris en compte
 				unset($result['time']);
 			}
-				
+
 
             if ($previous_result) {//maj
                 $previous_result->update($result);
 
-                
+
             } else {
                 $previous_result = \Djoudi\LaravelH5p\Eloquents\H5pResult::create($result);
-               
-                
+
+
             }
 
             $remonteeParent = false;
-            
+
             if ($request->input('context.contextActivities.parent') && isset($request->input('context.contextActivities.parent')[0]['id']) && !\Illuminate\Support\Str::contains($request->input('context.contextActivities.parent')[0]['id'], 'subContentId')){
                 $remonteeParent = true;
 
@@ -214,16 +215,16 @@ class AjaxController extends Controller
                             foreach($json->interactiveVideo->assets->interactions as $interaction){
                                 if($interaction->libraryTitle == 'Multiple Choice'){
                                     $interaction->action->subContentId;
-    
+
                                     $child = \Djoudi\LaravelH5p\Eloquents\H5pResult::firstOrCreate(['content_id' => $h5p_id, 'subcontent_id' => $interaction->action->subContentId, 'user_id' => $user_id], ['opened'=>now(), 'score'=>0, 'max_score'=>1]);
                                 }
                             }
                         }
                     }
-                   
+
 
                 }
-                
+
             } else {
                 $remonteeParent = true;
                 if($request->input('verb.id') == "http://adlnet.gov/expapi/verbs/answered"){
@@ -240,7 +241,7 @@ class AjaxController extends Controller
                                         foreach($element->action->params->choices as $choice){
                                             $choice->subContentId;
                                             $child = \Djoudi\LaravelH5p\Eloquents\H5pResult::firstOrCreate(['content_id' => $h5p_id, 'subcontent_id' => $choice->subContentId, 'user_id' => $user_id], ['opened'=>now(), 'score'=>0, 'max_score'=>1]);
-                        
+
                                         }
                                     }
 
@@ -254,7 +255,7 @@ class AjaxController extends Controller
                                     foreach($content->content->params->choices as $choice){
                                         $choice->subContentId;
                                         $child = \Djoudi\LaravelH5p\Eloquents\H5pResult::firstOrCreate(['content_id' => $h5p_id, 'subcontent_id' => $choice->subContentId, 'user_id' => $user_id], ['opened'=>now(), 'score'=>0, 'max_score'=>1]);
-                    
+
                                     }
                                 }
                             }
@@ -289,11 +290,11 @@ class AjaxController extends Controller
                         if ($content->finished) {
                             $nbSubContentComplete++;
                         }
-                        
+
                         if ($content->finished && $data['finished'] != -1) {
                             if ($data['finished'] == null || $data['finished'] < $content->finished) {
                                 $data['finished'] = $content->finished;
-                            }   
+                            }
                         } else {
                             $data['finished'] = -1;
                         }
@@ -312,7 +313,7 @@ class AjaxController extends Controller
                     } else {
                         $data['completion'] = 0;
                     }
-                   
+
 
                     $parent->update($data);
                     //if ($data['finished'] != -1 && $data['finished'] != null) {
@@ -327,13 +328,13 @@ class AjaxController extends Controller
 
 
             //event(new \Djoudi\LaravelH5p\Events\H5pResultEvent('test', 'debug', $result));
-            
+
 
         } else {
 
         }
-        
-        
+
+
         return response()->json($request->all());
     }
 
@@ -341,8 +342,8 @@ class AjaxController extends Controller
     {
         $retour = [];
 
-        $user_id = \Auth::id();    
-        
+        $user_id = \Auth::id();
+
         if ((int)$user_id > 0) {
             // Query String Parameters.
             $content_id = $request->content_id;
@@ -355,7 +356,7 @@ class AjaxController extends Controller
             $invalidate = $request->invalidate;
 
             if ($data !== null && $preload !== null && $invalidate !== null) {
-                if ($data === '0') { // Delete user data.             
+                if ($data === '0') { // Delete user data.
                     \Djoudi\LaravelH5p\Eloquents\H5pContentsUserData::where('content_id', $content_id)
                     ->where('user_id', $user_id)
                     ->where('sub_content_id', $sub_content_id)
@@ -375,8 +376,8 @@ class AjaxController extends Controller
                         'invalidate' => $invalidate
                     ]);
                 }
-                
-            } else { //retrieve data        
+
+            } else { //retrieve data
                 $contentUserData = \Djoudi\LaravelH5p\Eloquents\H5pContentsUserData::where('content_id', $content_id)
                     ->where('user_id', $user_id)
                     ->where('sub_content_id', $sub_content_id)
@@ -392,11 +393,11 @@ class AjaxController extends Controller
                         'preload' => $contentUserData->preload,
                         'invalidate' => $contentUserData->invalidate,
                     //]
-                              
+
                 ];
-            } 
+            }
         }
-                
+
         return response()->json($retour);
     }
 
@@ -408,13 +409,13 @@ class AjaxController extends Controller
 
         $user = \Auth::user();
 
-        
+
 
         //edition
         if ($id > 0) {
-         
+
             //$settings = $h5p::get_core();
-            
+
             $content = $h5p->get_content($id);
             $settings = $h5p::get_editor($content);
             $embed = $h5p->get_embed($content, $settings);
@@ -430,17 +431,14 @@ class AjaxController extends Controller
             $content = null;
             $parameters = isset($content['params']) ? $content['params'] : '{}';
             // view Get the file and settings to print from
-            
+
             $embed_code = '';
         }
-        
+
         // Prepare form
         $library = isset($content['library']) ? \H5PCore::libraryToString($content['library']) : 0;
         $display_options = $core->getDisplayOptionsForEdit(isset($content['disable']) ? $content['disable'] : null);
         $title = isset($content['title']) ? $content['title'] : '';
-
-      
-       
 
         return [
             'settings' => $settings,
