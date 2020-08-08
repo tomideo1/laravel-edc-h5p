@@ -2,10 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f50071b-ebe4-4d29-a9fa-ff4b5f8a98e0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/config/jwt.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/h5p/content/24/content.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/h5p/content/24/images/image-5f245e75bb453.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/h5p/content/24/images/image-5f245e892f298.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/h5p/content/24/images/match-5f245e836912b.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/h5p/content/24/images/match-5f245e8d44d37.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/h5p/content/25/content.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/h5p/content/25/images/image-569deb3c2a249.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/h5p/content/25/images/image-569deb5846a27.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/h5p/content/25/images/image-569deb68ef662.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/h5p/content/25/images/image-569debad2d8c4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/h5p/content/26/audios/audio-568b70e381d48.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/h5p/content/26/audios/audio-568b70ec28044.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/h5p/content/26/audios/audio-568b70f4d3704.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/h5p/content/26/audios/audio-568b70fbef52c.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/h5p/content/26/audios/audio-5694acdfdeadc.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/h5p/content/26/audios/audio-5f24615041aef.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/h5p/content/26/content.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/h5p/content/26/images/image-568b73cbd217e.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/h5p/content/26/images/image-568b751414a86.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/h5p/content/26/images/image-568b7557611a5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/h5p/content/26/images/image-568b75eb0dded.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/h5p/content/26/images/image-568b7660dc188.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/h5p/content/26/images/image-5f24612137c35.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/h5p/content/27/audios/files-5f24619eb9436.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/h5p/content/27/content.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/h5p/editor/audios/audio-5f24615041aef.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/h5p/editor/audios/files-5f24619eb9436.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/h5p/editor/images/image-5f245e75bb453.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/h5p/editor/images/image-5f245e892f298.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/h5p/editor/images/image-5f24612137c35.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/h5p/editor/images/match-5f245e836912b.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/h5p/editor/images/match-5f245e8d44d37.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/logs/laravel-2020-08-07.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/logs/laravel-2020-08-08.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/H5Pv2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/H5Pv2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/logs/laravel-2020-07-31.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel-2020-07-31.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,6 +158,11 @@
       <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/namshi/jose" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php56" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-util" />
+      <path value="$PROJECT_DIR$/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/vendor/tymon/jwt-auth" />
     </include_path>
   </component>
   <component name="ProjectId" id="1fFWQrjXPpXrfJA1Eeicvkc64f5" />
@@ -176,7 +221,9 @@
       <workItem from="1596153979804" duration="103000" />
       <workItem from="1596154151569" duration="662000" />
       <workItem from="1596155653811" duration="4244000" />
-      <workItem from="1596201054587" duration="10267000" />
+      <workItem from="1596201054587" duration="11795000" />
+      <workItem from="1596826951217" duration="110000" />
+      <workItem from="1596835066356" duration="5134000" />
     </task>
     <servers />
   </component>
@@ -184,6 +231,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="439" y="260" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596219832779">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="439" y="260" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1596219832779" />
     <state x="458" y="212" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1596159557363">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -196,23 +247,23 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="236" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1596028402339" />
-    <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1596205843454">
+    <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1596846213935">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1440.827@0.0.1440.827" timestamp="1596205737339" />
-    <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1440.900@0.0.1440.900" timestamp="1596205843454" />
+    <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1440.900@0.0.1440.900" timestamp="1596846213935" />
     <state x="410" y="190" width="620" height="520" key="find.popup" timestamp="1596214692068">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="410" y="175" width="620" height="488" key="find.popup/0.0.1440.827@0.0.1440.827" timestamp="1596068731357" />
     <state x="410" y="175" width="620" height="490" key="find.popup/0.0.1440.829@0.0.1440.829" timestamp="1596069176484" />
     <state x="410" y="190" width="620" height="520" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1596214692068" />
-    <state x="385" y="196" width="672" height="676" key="search.everywhere.popup" timestamp="1596218078457">
+    <state x="385" y="196" width="672" height="676" key="search.everywhere.popup" timestamp="1596846919332">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="385" y="196" width="672" height="676" key="search.everywhere.popup/0.0.1440.827@0.0.1440.827" timestamp="1596157333489" />
     <state x="385" y="180" width="672" height="624" key="search.everywhere.popup/0.0.1440.829@0.0.1440.829" timestamp="1596074578300" />
-    <state x="385" y="196" width="672" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1596218078457" />
+    <state x="385" y="196" width="672" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1596846919332" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
