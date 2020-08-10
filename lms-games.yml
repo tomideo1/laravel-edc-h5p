@@ -3,7 +3,7 @@
   vars:
     git_branch: master
     dest_path: /var/www/portal.games.edc.hostville.link/
-    repo: https://tomideo1:f9a99ee9c1c629dd279ce33b0bf372f11d29975c@github.com/tomideo1/laravel-edc-h5p.git
+    repo: https://tomideo1:71f6f1da319da5a3cff3a5ac3a2e65dc6a971e67@github.com/tomideo1/laravel-edc-h5p.git
     server_state: started
     etc:
       env:

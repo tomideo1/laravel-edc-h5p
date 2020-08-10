@@ -5,6 +5,7 @@ namespace App\Http\Middleware;
 use App\Models\User;
 use Illuminate\Auth\Middleware\Authenticate as Middleware;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 
 class Authenticate extends Middleware
 {
@@ -18,7 +19,7 @@ class Authenticate extends Middleware
     {
         if ($request->query('tenant_id')){
             $user = User::find($request->tenant_id);
-            if($user && Auth::attempt(['email' => $user->email, 'password' => 'password'])) {
+            if($user && Auth::loginUsingId($user->id)) {
                 return url('/api/h5p');
             }
             return route('login');

@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4f50071b-ebe4-4d29-a9fa-ff4b5f8a98e0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lms-games.yml" beforeDir="false" afterPath="$PROJECT_DIR$/lms-games.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +134,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
@@ -180,7 +181,9 @@
       <workItem from="1596155653811" duration="4244000" />
       <workItem from="1596201054587" duration="11795000" />
       <workItem from="1596826951217" duration="110000" />
-      <workItem from="1596835066356" duration="5182000" />
+      <workItem from="1596835066356" duration="5237000" />
+      <workItem from="1596888565864" duration="700000" />
+      <workItem from="1596889762863" duration="42000" />
     </task>
     <servers />
   </component>
@@ -215,12 +218,12 @@
     <state x="410" y="175" width="620" height="488" key="find.popup/0.0.1440.827@0.0.1440.827" timestamp="1596068731357" />
     <state x="410" y="175" width="620" height="490" key="find.popup/0.0.1440.829@0.0.1440.829" timestamp="1596069176484" />
     <state x="410" y="190" width="620" height="520" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1596214692068" />
-    <state x="385" y="196" width="672" height="676" key="search.everywhere.popup" timestamp="1596846919332">
+    <state x="385" y="196" width="672" height="676" key="search.everywhere.popup" timestamp="1596888618802">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="385" y="196" width="672" height="676" key="search.everywhere.popup/0.0.1440.827@0.0.1440.827" timestamp="1596157333489" />
     <state x="385" y="180" width="672" height="624" key="search.everywhere.popup/0.0.1440.829@0.0.1440.829" timestamp="1596074578300" />
-    <state x="385" y="196" width="672" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1596846919332" />
+    <state x="385" y="196" width="672" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1596888618802" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
