@@ -67,12 +67,10 @@
                             {{ $entry->id }}
                         </td>
 
-                        {{--  <td class="">  --}}
-                            {{--  {{ $entry->get_user()->name }}  --}}
-                        {{--  </td>  --}}
-                        <td>
-                            Tomide
-                        </td>
+                         <td class="">
+                             {{ $entry->get_user()->name }}
+                          </td>
+
 
                         <td class="text-left">
                             <a href="{{ route('h5p.show', $entry->id) }}">{{ $entry->title }}</a>
