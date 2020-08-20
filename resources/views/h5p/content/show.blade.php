@@ -1,7 +1,7 @@
 @extends( config('laravel-h5p.layout') )
 
 @section( 'h5p' )
-{{header('X-Frame-Options: *')}}
+{{-- {{header('X-Frame-Options: *')}} --}}
 <div class="container-fluid">
 
     <div class="row">
