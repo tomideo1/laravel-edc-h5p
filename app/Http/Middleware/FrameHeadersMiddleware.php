@@ -16,7 +16,7 @@ class FrameHeadersMiddleware
     public function handle($request, Closure $next)
     {
         $response = $next($request);
-        $response->header('X-Frame-Options', 'ALLOW ');
+        $response->header('X-Frame-Options', 'ALLOW ALL ');
         return $response;
     }
 }
